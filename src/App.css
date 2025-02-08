@@ -1,0 +1,357 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+  .main{
+    /* background-image: url("../src/assets/poppy-field-butterflies-gif-desktop-wallpaper.gif"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    height: 100vh;
+    background-color: #6ec4f7;
+  }
+  .fullFrame{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: start;
+    /* max-width: 1000px; */
+    margin-left: 110px;
+    background-color: rgba(255, 255, 255, 0.934);
+    /* padding: 10px; */
+    border-radius: 50px;
+    max-width: 1200px;
+  }
+  .inSearch{
+    display: flex;
+    /* background-color: red; */
+    max-width: 100vh;
+    margin-bottom: 20px;
+    gap: 5px;
+  }
+  input{
+    width: 250px;
+    height: 30px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-family: "Roboto Condensed", serif;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid white;
+  font-size: 20px;
+  }
+  input::placeholder{
+    color: rgba(150, 147, 147, 0.553);
+    font-size: 17px;
+  }
+  button{
+    width: 30px;
+    border-radius: 10px;
+    border: none;   
+    background-color: transparent;
+    cursor: pointer;
+  }
+  button:hover{
+      box-shadow: 1px 1px 6px 2px white;
+      transition: all 0.3s ease-in-out;
+  }
+  .top{
+    background-color: #0d94f4d6;
+    display: flex;
+    justify-content: space-between;
+    /* min-width: 150vh; */
+    min-height: 90vh;
+    padding: 40px;
+    /* border: 1px solid rgb(0, 0, 0);  */
+    /* border-radius: 50px; */
+    /* box-shadow: 5px 1px 20px 2px white; */
+    backdrop-filter: blur(3px);
+    /* margin-bottom: 50px; */
+    /* margin-left: 80px; */
+    
+  }
+  .wtype {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-family: "Roboto Condensed", serif;
+  }
+  .temp{
+    font-family: "Bebas Neue", serif;
+
+  }
+  .stack h2{
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.708);
+  }
+  .main_icon h3{
+    color: white;
+    margin-top: 10px;
+  }
+  .sp{
+    margin-top: 15px;
+  }
+  .stack{
+    margin-left: 50px;
+    margin-top: 40px;
+    font-family: "Roboto Condensed", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 650px;
+    /* background-color: blue; */
+  }
+
+  .today{
+    /* margin-top: 40px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ✅ 2 columns */
+    gap: 25px; /* ✅ Adds space between cards */
+    width: 100%;
+    max-width: 100px; /* Optional: Adjust max width */
+
+
+  }
+  .today_humid,.today_wind,.today_uv,.today_aqi{
+    /* border: 1.6px solid black; */
+    min-height: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    width: 180px;
+    box-shadow: 0px 2px 3px 0px black;
+ 
+  }
+  .Dforcast{    
+/* background-color: yellow; */
+/* margin-left: 10px; */
+width: 100%;
+  }
+  p{
+    margin-bottom: 4px;
+    color: rgba(0, 0, 0, 0.685);
+  }
+  .wtype img{
+    width: 200px;
+
+  }
+  
+  .main_icon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    padding: 10px;
+    color: white;
+  }
+  .temp{
+    font-size: 100px;
+    margin-bottom: 0; /* ✅ Removes bottom margin */
+    padding: 0; /* ✅ Removes any extra padding */
+
+  }
+
+  /* ✅ Tablet Devices (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .main {
+    padding: 20px;
+    height: auto;
+  }
+
+  .fullFrame {
+    margin-left: 0;
+    max-width: 100%;
+    border-radius: 30px;
+    /* padding: 20px; */
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .stack {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .today {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-content: center;
+    width: 250px;
+
+  }
+  .temp {
+    font-size: 80px;
+  }
+}
+
+/* ✅ Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 10px;
+    height: auto;
+  }
+
+  .fullFrame {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+    
+  }
+  .top {
+    flex-direction: column;
+    padding: 15px;
+    min-height: 90vh;
+    width: 100%;
+
+
+  }
+
+  .inSearch {
+    flex-direction: row;
+    align-items: center;
+    width: 50vh;
+    margin-bottom: 10px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 16px;
+    height: 50px;
+  }
+
+  .stack {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .today {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .today_humid,
+  .today_wind,
+  .today_uv,
+  .today_aqi {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .temp {
+    font-size: 200px;
+    /* margin-top: 30px; */
+  }
+  .data{
+    font-size: 30px;
+    
+  }
+  .main_icon img{
+    margin-top: 20px;
+    width: 300px;
+  }
+  .main_icon h3{
+    font-size: 50px;
+    margin-top: 40px;
+  }
+  .today_humid,.today_wind,.today_uv,.today_aqi{
+    width: 250px;
+    min-height: 300px;
+    margin: 10px;
+    font-size: 30px;
+  }
+  .today{
+    margin: 20px;
+    
+  }
+  .stack,h2{
+    font-size: 50px;
+  }
+
+}
+@media screen and (max-width: 584px) {
+  .main {
+    padding: 5px;
+    height: auto;
+  }
+
+  .fullFrame {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+  }
+
+  .top {
+    flex-direction: column;
+    padding: 10px;
+    min-height: auto;
+  }
+
+  .inSearch {
+    flex-direction: column; /* ✅ Stack input & button */
+    align-items: center;
+    width: 100%;
+  }
+
+  input {
+    width: 90%;
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .stack {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .today {
+    grid-template-columns: repeat(2, 1fr); /* ✅ Stack today cards */
+    gap: 10px;
+  }
+
+  .today_humid,
+  .today_wind,
+  .today_uv,
+  .today_aqi {
+    width: 90%;
+    max-width: 250px;
+    min-height: 150px;
+  }
+
+  .temp {
+    font-size: 70px; /* ✅ Reduce font size for better fit */
+  }
+
+  .main_icon img {
+    width: 150px; /* ✅ Scale down weather icon */
+  }
+
+  .main_icon h3 {
+    font-size: 30px;
+  }
+
+  .data {
+    font-size: 20px;
+  }
+}

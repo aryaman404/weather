@@ -1,0 +1,112 @@
+.Bmain{
+    /* background-color: blue; */
+    margin: auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bottom{
+    /* background-color: green; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 130px;
+    max-height: 180px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: "Roboto Condensed", serif;
+    backdrop-filter: blur(2px); /* The actual glass effect */
+    /* box-shadow: 5px 1px 20px 2px white; */
+    /* border: 1px solid rgb(0, 0, 0); */
+    margin: 5px;
+    gap: 25px;
+  }
+  .bottom p{
+    /* margin: 6px; */
+  }
+  .cardSmall{
+    /* border: 1.6px solid black; */
+    box-shadow: 0px 2px 3px 0px black;
+    min-width: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    /* background-color: yellow; */
+    padding: 8px;
+    gap: 5px;
+  }
+  .cardSmall img{
+    width: 50px;
+    height: 50px;
+  }
+  /* ✅ Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 600px; /* ✅ Keeps layout controlled */
+      max-height: 600px;
+  }
+  
+
+  .cardSmall {
+      flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
+      max-width: 150px;
+      min-width: 100px;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 15px;
+      box-shadow: 0px 2px 3px 0px black;
+      padding: 8px;
+      gap: 5px;
+  }
+}
+
+/* ✅ Mobile Devices (≤768px) */
+@media screen and (max-width: 768px) {
+  .bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 600px;
+  }
+  .
+
+  .cardSmall {
+      flex: 1 1 calc(33.33% - 20px); /* ✅ Still keeping 3 per row on smaller screens */
+      max-width: 180px;
+      min-width: 180px;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 15px;
+      box-shadow: 0px 2px 3px 0px black;
+      padding: 8px;
+      gap: 5px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .bottom {
+    gap: 10px; /* ✅ Removes space between cards */
+  }
+
+  .cardSmall {
+    flex: 1 1 calc(33.33%); /* ✅ Keeps 3 items per row */
+    max-width: 130px; /* ✅ Makes them smaller */
+    min-width: 80px;
+    min-height: 130px;
+    padding: 5px; /* ✅ Reduces padding */
+    gap: 0px; /* ✅ Removes inner gap */
+  }
+}
